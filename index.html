@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeChat - Realtime Node Socket.io Chat App</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="bg"></div>
+    <nav>
+        <img class="logo" src="icon.png" alt="">
+        <br>
+        <u><p class="line-1 anim-typewriter">Hello there, Welcome to the Chat World!!</p></u>
+
+    </nav>
+
+    <div class="container"></div>
+
+    <div class="send">
+
+
+        <form action="#" id="send-container">
+            <input type="text" name="messageInp" id="messageInp" placeholder="Type a message here">
+            <script>
+                $(document).ready(function () {
+                    $("#messageInp").emojioneArea({
+                        pickerPosition: "top",
+
+                    });
+                })
+            </script>
+            <button class="btn" type="submit"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Send</button>
+        </form>
+ 
+    </div>
+</body>
+
+</html>
